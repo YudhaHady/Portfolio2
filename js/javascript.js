@@ -8,19 +8,15 @@ plate.addEventListener("click", () => {
 	ul.classList.toggle("active");
 });
 
+function toggleMenu() {
+	plate.classList.toggle("active");
+	ul.classList.toggle("active");
+}
+
 document.addEventListener("scroll", () => {
 	header.classList.toggle("sticky", window.scrollY > 30);
 	navBar.classList.toggle("sticky", window.scrollY > 30);
 });
-
-// document.addEventListener("scroll", () => {
-// 	let scroll_position = window.scrollY;
-// 	if (scroll_position > 50) {
-// 		header.style.backgroundColor = "#29323c";
-// 	} else {
-// 		header.style.backgroundColor = "transparent";
-// 	}
-// });
 
 // Scroll reveal
 const sr = ScrollReveal({
@@ -42,4 +38,3 @@ sr.reveal(".about-img", { delay: 100, duration: 1000, origin: "right" });
 
 sr.reveal(".btn", { delay: 100, duration: 1000, origin: "left" });
 sr.reveal(".project-info", { delay: 100, duration: 1000, origin: "left" });
-sr.reveal("", { interval: 200, delay: 200, origin: "right" });

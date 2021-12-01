@@ -95,7 +95,6 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
 	display: flex;
@@ -106,14 +105,14 @@ p {
 	max-width: 95%;
 	padding: 10px 20px;
 	transition: 0.8s;
-	transition: 0.5s ease;
+	/* transition: 0.5s ease; */
 }
 #header .nav-bar.sticky {
 	height: 75px;
-	transition: ease 0.5s;
+	/* transition: ease 0.5s; */
 }
 #header .header.container {
-	transition: 0.5s ease;
+	/* transition: 0.2s ease; */
 }
 #header .header.container.sticky {
 	background-image: linear-gradient(to bottom, #485563 0%, #29323c 100%);
@@ -485,9 +484,6 @@ svg {
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: #fff;
-
-	/* margin: 0 20px;
-	border-radius: 20px; */
 }
 #project .project-info h1 {
 	font-size: 3rem;
@@ -686,6 +682,7 @@ svg {
 @keyframes text_reveal_color {
 	100% {
 		background: linear-gradient(to bottom right, #f2aa4cff, #c0c0c0);
+		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
